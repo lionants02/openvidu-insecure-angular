@@ -12,8 +12,8 @@ import { catchError } from 'rxjs/operators';
 })
 export class AppComponent implements OnDestroy {
 
-  OPENVIDU_SERVER_URL = 'https://' + location.hostname + ':4443';
-  OPENVIDU_SERVER_SECRET = 'MY_SECRET';
+  OPENVIDU_SERVER_URL = 'https://stream.vconf.in.th';
+  OPENVIDU_SERVER_SECRET = 'Telemed1';
 
   // OpenVidu objects
   OV: OpenVidu;
