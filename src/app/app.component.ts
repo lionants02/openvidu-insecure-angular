@@ -158,6 +158,14 @@ export class AppComponent implements OnDestroy {
    *   3) The token must be consumed in Session.connect() method of OpenVidu Browser
    */
 
+   /**
+   ตรวส่วนนี้อยากให้พัฒนา API ขึ้นมาเรียกใช้ เพื่อที่จะได้ดูว่า User ไหนสร้างห้องได้ เพราะตอนนี้
+   OPENVIDU_SERVER_URL = 'https://stream.vconf.in.th';
+   OPENVIDU_SERVER_SECRET = 'Telemed1';
+   จะอยู่ที่ Browser จะไม่ปลอดภัย
+   https://openvidu.io/docs/reference-docs/REST-API/
+   */
+
   getToken(): Promise<string> {
     return this.createSession(this.mySessionId).then(
       sessionId => {
